@@ -1,0 +1,84 @@
+PERGUNTA 1
+
+O meu algoritmo pra resolver esse problema funcionaria da seguinte maneira:
+Como o objetivo é minimizar o custo final, quanto maior a distância do destino do pacote, menor deve ser o preço por quilômetro do fornecedor que vai realizar a entrega.
+Para resolver isso basta ordenar o vetor de pacotes da maior distância para a menor, e o vetor de fornecedores do menor preço para o maior. Como ambos os vetores possuem N elementos, basta atribuir um pacote pra cada fornecedor, seguindo as ordenações feitas.
+Dessa forma, para cada pacote que precisa ser destinado a uma distância Di, quanto maior a distância Di , menor vai ser o preço Pi de entrega ( reais por quilômetro rodado ) do fornecedor responsável (dentre os fornecedores possíveis).
+Para printar a solução como no exemplo, atribui na struct do pacote um atributo fornecedor. Após printar o custo final das entregas, eu ordeno novamente o vetor de pacotes mas dessa vez pela id (da menor para a maior), e na hora de printar, printo apenas o id do fornecedor responsável pela entrega daquele pacote (na ordem dos pacotes).
+
+
+PARES DE ARQUIVO DE ENTRADA E SAIDA:
+
+IN1.TXT
+4
+2
+6
+8
+4
+30
+40
+10
+20
+
+OUT1.TXT
+400 
+2
+4
+3
+1
+
+IN2.TXT
+5
+1
+2
+4
+3
+5
+10
+10
+10
+10
+20
+
+
+OUT2.TXT
+160 
+5
+4
+2
+3
+1
+
+IN3.TXT
+3
+10
+20
+30
+30
+20
+10
+
+OUT3.TXT
+1000 
+1
+2
+3
+
+
+IN4.TXT
+4
+5
+30
+20
+10
+100
+300
+200
+400
+
+OUT4.TXT
+12000
+4
+1
+3
+2
