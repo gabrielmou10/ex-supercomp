@@ -1,0 +1,5 @@
+PERGUNTA 3
+
+Sabemos se a solução final é justa se for entregue a Alice uma partição de valor de pelo menos 7, George uma de valor de pelo menos 8 e a Dina uma de valor de pelo menos 3. 
+Qualquer solução que entregue uma partição de valor menor do que as mencionadas acima, seria injusta. 
+Portanto podemos descartar qualquer solução que entregue uma partição menor para cada uma dessas pessoas;
