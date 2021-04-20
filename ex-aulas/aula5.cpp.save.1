@@ -1,0 +1,48 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+struct object{
+       int id;
+       int weight;
+       int value;
+    };
+
+
+bool compara_objetos(object &a, object &b){
+        return a.value > b.value;
+    }
+
+int main() {
+   
+    int n;
+    int wmax;
+    std::cout << "número de objetos :";
+    std::cin >> n;
+    std::cout << "peso máximo da mochila: ";
+    std::cin >> wmax;
+    
+    std::vector<object> objetos(n);
+
+
+    for (int i=0;i<n;i++){
+        objetos[i].id =i;
+        std::cout << "peso w" << i << ": ";
+        std::cin >> objetos[i].weight;
+        std::cout << "valor v" << i << ": ";
+        std::cin >> objetos[i].value;
+    }
+
+    int wactual = 0;
+    int vactual = 0;
+
+    std::vecto result;
+    result.reerve(n);
+    std::sort(objeto.begin(), objetos.end(), compara_objetos);
+    for (object &o : objetos)
+        if (wactual + o.weigt < wmax) {
+            result.push_bac(o.id);
+            wactul += o.wight;
+            vactua
