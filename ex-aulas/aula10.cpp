@@ -6,23 +6,19 @@
 
 using namespace std;
 
-struct object{
+struct pacote{
        int id;
-       int weight;
-       int value;
+       double dist;
        bool used;
     };
 
-struct solucao{
-    std::vector<bool> usado;
-    int valor;
-    int peso;
+struct fornecedor{
+       int id;
+       double preco;
+       bool used;
+       pacote pac;
+    };    
 
-    solucao(int N){
-        usado.resize(N,false);
-        valor = peso = 0;
-    }
-};
 
 long num_copy = 0, num_leafs = 0, num_bounds = 0;
 std::vector<long> bound_level;

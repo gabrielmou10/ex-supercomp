@@ -1,0 +1,17 @@
+PERGUNTA 2
+
+A alocação de objetos resultante dessa estratégia seria: 
+
+ALICE (pessoa 1) com o objeto 5 (valor 9) e objeto 3 (valor 4), valor resultante: 13
+GEORGE (pessoa 2) com o objeto 2 (valor 7) e objeto 1 (valor 1), valor resultante: 8
+DINA (pessoa 3) com o objeto 4 (valor 4), valor resultante: 4
+
+De acordo com o enunciado, para um particionamento ser considerado justo no sentido do MMS, deve ser entregue a Alice uma partição de valor de pelo menos 7, para George uma de valor de pelo menos 8 e a Dina uma de valor de pelo menos 3. 
+
+Portanto, considerando o enunciado essa estratégia possui uma alocação de objetos resultante considerada justa.
+
+O valor da partição menos valiosa é 4, para Dina.
+
+
+
+
